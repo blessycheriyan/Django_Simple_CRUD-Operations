@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/movies/update" method="post">
+  {%csrf_token%}
+  <label for="title">Movie Title :</label>
+  <input type="text" name="title" id="title" placeholder="Movie title"><br><br>
+  <label for="title">Movie Year :</label>
+  <input type="text" name="year" id="year" placeholder="Movie Year"><br><br>
+
+  <input type="submit" value="Update">
+</form>
+</body>
+</html>
